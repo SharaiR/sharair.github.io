@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Raman Sharai – SDET / QA Automation Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Raman Sharai – SDET / QA Automation Engineer focused on Python, Selenium, API, and performance testing."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Analytics (GA4) – UK/EU-friendly minimal setup -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V342C3VFV7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    // Default: no analytics cookies (safer for UK PECR without a cookie banner)
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+
+    gtag('js', new Date());
+    gtag('config', 'G-V342C3VFV7', { 'anonymize_ip': true });
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <!-- NAV -->
+    <header class="site-header">
+      <div class="nav-inner">
+        <div class="brand">
+          <div class="brand-avatar">R</div>
+          <div class="brand-text">
+            <div class="brand-name">Raman Sharai</div>
+            <div class="brand-role">SDET · QA Automation Engineer</div>
+          </div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact" class="nav-primary">Contact</a>
+        </nav>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle color theme"
+        >
+          <span class="theme-toggle-track">
+            <span class="theme-toggle-icon theme-icon-sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="12" y1="2" x2="12" y2="5"></line>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"></line>
+                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"></line>
+                <line x1="2" y1="12" x2="5" y2="12"></line>
+                <line x1="19" y1="12" x2="22" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"></line>
+                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+            <span class="theme-toggle-icon theme-icon-moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M21 12.79A9 9 0 0 1 12.21 3 7 7 0 1 0 21 12.79z"
+                ></path>
+              </svg>
+            </span>
+            <span class="theme-toggle-thumb"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero-left">
+          <div class="hero-pill">
+            <span class="dot"></span>
+            <span>Open to SDET / QA Automation roles (London & remote)</span>
+          </div>
+          <div class="hero-meta">
+            <!-- · No sponsorship required -->
+            <span>📍 London, UK</span>
+          </div>
+          <h1 class="hero-title">Raman Sharai</h1>
+          <p class="hero-subtitle">
+            SDET / QA Automation Engineer · Python-first
+          </p>
+
+          <p class="hero-body">
+            I focus on building reliable UI, API, and performance test automation in
+            Python and C#. My core stack is Pytest, Selenium&nbsp;/ Playwright, JMeter,
+            and CI/CD pipelines, and on the side I experiment with Swift&nbsp;/ SwiftUI
+            and small iOS apps.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="cta-button" href="#contact">📄 Request CV via LinkedIn or Email</a>
+            <a id="link-github" class="cta-button" href="#" target="_blank" rel="noopener" >GitHub</a>
+
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="hero-card">
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-number">10+</div>
+                <div class="hero-stat-label">years in IT</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">6+</div>
+                <div class="hero-stat-label">years in automation</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">1</div>
+                <div class="hero-stat-label">App Store app</div>
+              </div>
+            </div>
+
+            <p class="hero-highlight">
+              Python-first SDET with a strong C# background, experience in UI, API,
+              and performance testing, and hands-on CI/CD with Azure DevOps and
+              GitHub Actions. Certified via CS50&rsquo;s Introduction to Programming
+              with Python and multiple Python test automation courses.
+            </p>
+
+            <div class="hero-tech-strip">
+              <div class="tech-chip">Python</div>
+              <div class="tech-chip">C#</div>
+              <div class="tech-chip">Pytest</div>
+              <div class="tech-chip">Selenium</div>
+              <div class="tech-chip">Playwright</div>
+              <div class="tech-chip">NUnit</div>
+              <div class="tech-chip">CI/CD</div>
+              <div class="tech-chip">JMeter</div>
+              <div class="tech-chip">App Store Connect</div>
+            </div>
+
+          </div>
+        </aside>
+      </section>
+
+
+      <!-- TECH STRIP -->
+      <section class="tech-strip">
+        <div class="tech-strip-label">Tech focus</div>
+        <div class="tech-strip-icons">
+
+          <!-- Python -->
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span class="icon-text">Python</span>
+          </div>
+
+          <!-- Pytest -->
+          <div class="icon-tile">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Pytest_logo.svg" alt="Pytest" />
+            <span class="icon-text">Pytest</span>
+          </div>
+
+          <!-- C# -->
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />
+            <span class="icon-text">C#</span>
+          </div>
+
+          <!-- NUnit -->
+          <div class="icon-tile">
+            <img src="https://api.nuget.org/v3-flatcontainer/nunit/4.4.0/icon" alt="NUnit" />
+            <span class="icon-text">NUnit</span>
+          </div>
+
+          <!-- Selenium -->
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" />
+            <span class="icon-text">Selenium</span>
+          </div>
+
+          <!-- Playwright -->
+          <div class="icon-tile">
+            <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright" />
+            <span class="icon-text">Playwright</span>
+          </div>
+
+          <!-- Postman -->
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" />
+            <span class="icon-text">Postman</span>
+          </div>
+
+          <!-- JMeter -->
+          <div class="icon-tile">
+            <img src="https://jmeter.apache.org/images/logo.svg" alt="JMeter" />
+            <span class="icon-text">JMeter</span>
+          </div>
+
+          <!-- SQL -->
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+            <span class="icon-text">SQL</span>
+          </div>
+
+          <!-- Docker -->
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+            <span class="icon-text">Docker</span>
+          </div>
+
+          <!-- GitHub -->
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            <span class="icon-text">GitHub</span>
+          </div>
+
+          <!-- Azure -->
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
+            <span class="icon-text">Azure DevOps</span>
+          </div>
+
+          <div class="icon-tile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" />
+            <span class="icon-text">Swift / iOS</span>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="section-header">
+          <div class="section-kicker">About</div>
+        </div>
+
+        <div class="split-layout">
+          <div class="card">
+            <p class="card-body">
+              I&rsquo;m a Software Test Automation Engineer with around ten years in IT and
+              six+ years in automation using C#, Python, and modern frameworks.
+              I&rsquo;ve built UI, API, and performance test suites, integrated them into
+              CI/CD, and worked with microservices and cloud environments.
+            </p>
+            <p class="card-body card-body-muted">
+              Recently I refocused on Python: completed Harvard&rsquo;s CS50P, several
+              LinkedIn Learning courses, built automation projects, released an iOS app,
+              and created a Telegram bot for crypto tracking.
+            </p>
+          </div>
+
+          <div class="card about-card">
+            <p class="card-body">
+              Outside of work I practice kendo, enjoy Japanese culture, and play Nintendo games,
+               and sometimes explore iOS development in Swift.
+            </p>
+            <div class="about-hobbies">
+              <div class="about-pill">
+                <img src="assets/kendo-icon.png" alt="Kendo icon" />
+                <span>Kendo</span>
+              </div>
+              <div class="about-pill">
+                <img src="assets/game-icon.png" alt="Nintendo icon" />
+                <span>Nintendo</span>
+              </div>
+                <div class="about-pill">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift icon" />
+                  <span>iOS / Swift</span>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="projects-header">
+          <div class="section-header">
+            <div class="section-kicker">Projects</div>
+            <h2 class="section-title">What I&rsquo;ve built</h2>
+            <p class="section-subtitle">
+              A few things that show how I think about automation and products.
+            </p>
+          </div>
+          <div class="projects-filters">
+            <button class="filter-pill active" data-filter="all" type="button">All</button>
+            <button class="filter-pill" data-filter="test-automation" type="button">Test automation</button>
+            <button class="filter-pill" data-filter="api" type="button">API</button>
+            <button class="filter-pill" data-filter="ios" type="button">iOS</button>
+            <button class="filter-pill" data-filter="bots" type="button">Bots</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- iOS app -->
+          <article class="card project-card" data-tags="ios">
+            <div class="card-title-row">
+              <div class="card-title-text">
+                <h3 class="card-title">Dice &rsquo;n&rsquo; Roll &mdash; iOS app</h3>
+                <p class="card-subtitle">Swift · SwiftUI · StoreKit · In-App Purchases</p>
+              </div>
+              <div class="card-icon">
+                <a href="https://apps.apple.com/us/app/dice-n-roll/id6736938458?itscg=30200&itsct=apps_box_artwork&mttnsubad=6736938458" style="position: relative; width: 60px; height: 60px; overflow: hidden; display: inline-block; vertical-align: middle;
+                    --app-icon-mask: url('data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20viewBox%3D%220%200%20230.5%20230.5%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%221.4%22%20clip-rule%3D%22evenodd%22%20d%3D%22M158.2%20230H64.1a320%20320%200%200%201-7-.1c-5%200-10-.5-15-1.3a50.8%2050.8%200%200%201-14.4-4.8%2048.2%2048.2%200%200%201-21-21%2050.9%2050.9%200%200%201-4.8-14.4%20100.7%20100.7%200%200%201-1.3-15v-7l-.1-8.2V64.1a320%20320%200%200%201%20.1-7c0-5%20.5-10%201.3-15a50.7%2050.7%200%200%201%204.8-14.4%2048.2%2048.2%200%200%201%2021-21%2051%2051%200%200%201%2014.4-4.8c5-.8%2010-1.2%2015-1.3a320%20320%200%200%201%207%200l8.2-.1h94.1a320%20320%200%200%201%207%20.1c5%200%2010%20.5%2015%201.3a52%2052%200%200%201%2014.4%204.8%2048.2%2048.2%200%200%201%2021%2021%2050.9%2050.9%200%200%201%204.8%2014.4c.8%205%201.2%2010%201.3%2015a320%20320%200%200%201%20.1%207v102.3l-.1%207c0%205-.5%2010-1.3%2015a50.7%2050.7%200%200%201-4.8%2014.4%2048.2%2048.2%200%200%201-21%2021%2050.8%2050.8%200%200%201-14.4%204.8c-5%20.8-10%201.2-15%201.3a320%20320%200%200%201-7%200l-8.2.1z%22%2F%3E%0A%3C%2Fsvg%3E%0A');">
+
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/34/0b/1b340b52-87c6-e699-bec2-b359ad3bdb73/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/540x540bb.jpg" alt="Dice 'n' Roll"
+                        style="width: 100%; height: 100%; object-fit: contain;
+                        mask-image: var(--app-icon-mask); -webkit-mask-image: var(--app-icon-mask);" />
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.5 230.5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; box-sizing: border-box;">
+                <path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="1.4" stroke-opacity=".1" stroke-width="1" d="M158.2 230H64.1a320 320 0 0 1-7-.1c-5 0-10-.5-15-1.3a50.8 50.8 0 0 1-14.4-4.8 48.2 48.2 0 0 1-21-21 50.9 50.9 0 0 1-4.8-14.4 100.7 100.7 0 0 1-1.3-15v-7l-.1-8.2V64.1a320 320 0 0 1 .1-7c0-5 .5-10 1.3-15a50.7 50.7 0 0 1 4.8-14.4 48.2 48.2 0 0 1 21-21 51 51 0 0 1 14.4-4.8c5-.8 10-1.2 15-1.3a320 320 0 0 1 7 0l8.2-.1h94.1a320 320 0 0 1 7 .1c5 0 10 .5 15 1.3a52 52 0 0 1 14.4 4.8 48.2 48.2 0 0 1 21 21 50.9 50.9 0 0 1 4.8 14.4c.8 5 1.2 10 1.3 15a320 320 0 0 1 .1 7v102.3l-.1 7c0 5-.5 10-1.3 15a50.7 50.7 0 0 1-4.8 14.4 48.2 48.2 0 0 1-21 21 50.8 50.8 0 0 1-14.4 4.8c-5 .8-10 1.2-15 1.3a320 320 0 0 1-7 0l-8.2.1z" clip-rule="evenodd" vector-effect="non-scaling-stroke"/>
+                </svg>
+                </a>
+              </div>
+            </div>
+            <p class="card-body">
+              A clean dice rolling app with multiple dice types, simple visuals,
+              and optional in-app themes. Built and shipped end-to-end: design,
+              development, testing, and App Store release.
+            </p>
+            <div class="tag-row">
+              <span class="tag">SwiftUI</span>
+              <span class="tag">App Store</span>
+              <span class="tag">Solo project</span>
+            </div>
+            <div class="link-row">
+              <a
+                id="link-appstore"
+                href="#"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1730332800"
+                  alt="Download on the App Store"
+                  class="appstore-badge"
+                />
+              </a>
+              <a id="link-qr" href="#" target="_blank" rel="noopener">View QR code →</a>
+            </div>
+          </article>
+
+          <!-- Pytest + Selenium -->
+          <article class="card project-card" data-tags="test-automation">
+            <h3 class="card-title">UI test framework &mdash; Pytest + Selenium</h3>
+            <p class="card-subtitle">Python · Pytest · Selenium · POM</p>
+            <p class="card-body">
+              Python UI automation with Pytest and Selenium, using Page Object Model,
+              fixtures, parametrization, and environment-aware config. Structured to
+              plug into CI and be easy for a team to extend.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Pytest</span>
+              <span class="tag">Selenium</span>
+              <span class="tag">POM</span>
+            </div>
+            <div class="link-row">
+              <a
+                id="link-repo-pytest-selenium"
+                href="#"
+                target="_blank"
+                rel="noopener"
+              >
+                View repository →
+              </a>
+            </div>
+          </article>
+
+          <!-- API tests -->
+          <article class="card project-card" data-tags="test-automation,api">
+            <h3 class="card-title">API test suite &mdash; Python</h3>
+            <p class="card-subtitle">Python · REST API · Test automation</p>
+            <p class="card-body">
+              API tests covering happy paths, edge cases, status codes, and payload
+              validation. Built for quick feedback in CI and to support a microservices
+              architecture.
+            </p>
+            <div class="tag-row">
+              <span class="tag">API testing</span>
+              <span class="tag">Pytest</span>
+              <span class="tag">Requests</span>
+            </div>
+            <div class="link-row">
+              <a id="link-repo-python-api-tests" href="#" target="_blank" rel="noopener" >View repository →</a>
+            </div>
+          </article>
+
+          <!-- Telegram bot -->
+          <article class="card project-card" data-tags="bots,api">
+            <div class="card-title-row">
+              <div class="card-title-text">
+                <h3 class="card-title">CryptoCoinTrackBot &mdash; Telegram bot</h3>
+                <p class="card-subtitle">Python · CoinCap API · Caching</p>
+              </div>
+              <div class="card-icon">
+                <img src="assets/crypto-coin-tg-bot-icon.png" alt="CryptoCoinTrackBot icon" />
+              </div>
+            </div>
+            <p class="card-body">
+              Telegram bot that returns crypto prices, market info, and top coins by
+              market cap using CoinCap OpenAPI and simple caching to avoid hitting
+              rate limits.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">pytest</span>
+              <span class="tag">telebot</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Bots</span>
+              <span class="tag">APIs</span>
+            </div>
+            <div class="link-row">
+              <span>Bot handle: <strong>@CryptoCoinTrackBot</strong></span>
+            </div>
+          </article>
+
+          <!-- WIP iOS apps -->
+          <article class="card project-card" data-tags="ios">
+            <h3 class="card-title">Other iOS projects (in progress)</h3>
+            <p class="card-subtitle">Swift · SpriteKit · Computer vision (planned)</p>
+            <ul class="bullet-list">
+                <li>A wellness-focused app built with SpriteKit.</li>
+                <li>An application for radio amateurs.</li>
+                <li>A planned open-source sports app that uses YOLO-based computer vision.</li>
+                <li>A browser extension (currently at the idea stage).</li>
+            </ul>
+
+            <div class="tag-row">
+              <span class="tag">SwiftUI</span>
+              <span class="tag">SpriteKit</span>
+              <span class="tag">Core ML</span>
+              <span class="tag">YOLO (planned)</span>
+            </div>
+            <div class="link-row">
+              <span>Code &amp; details coming soon.</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="section-header">
+          <div class="section-kicker">Skills</div>
+          <h2 class="section-title">Core stack as SDET</h2>
+          <p class="section-subtitle">
+            Focused on Python, with strong C# experience and enough breadth to support real-world teams.
+          </p>
+        </div>
+
+        <div class="skills-columns card">
+          <div>
+            <div class="skills-group-title">Core SDET stack</div>
+            <ul class="skills-list">
+              <li>Python · <strong>Pytest</strong></li>
+              <li>C# · NUnit · SpecFlow</li>
+              <li>Selenium WebDriver · Playwright</li>
+              <li>API testing (REST, Requests, Postman)</li>
+              <li>Performance testing (JMeter, InfluxDB, Grafana)</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="skills-group-title">Testing &amp; practices</div>
+            <ul class="skills-list">
+              <li>UI, API, integration, regression and smoke suites</li>
+              <li>BDD (Gherkin), TDD, DDT, unit testing</li>
+              <li>CI/CD: Azure DevOps, GitHub Actions, Jenkins</li>
+              <li>Agile / Scrum, shift-left testing, Three Amigos</li>
+              <li>Accessibility testing (AXE DevTools)</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="skills-group-title">Also comfortable with</div>
+            <ul class="skills-list">
+              <li>Java and JavaScript / TypeScript for tests</li>
+              <li>Cypress and Appium (web &amp; mobile testing)</li>
+              <li>Docker, Git, GitHub</li>
+              <li>SQL Server, SQLite</li>
+              <li>Swift / SwiftUI for iOS side projects</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="section-header">
+          <div class="section-kicker">Contact</div>
+          <h2 class="section-title">Let&rsquo;s talk</h2>
+          <p class="section-subtitle">
+            I&rsquo;m open to SDET / QA Automation roles in London or remote.
+          </p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-main">
+            <div class="contact-heading">Have a role in mind?</div>
+            <p class="contact-text">
+              I&rsquo;m happy to walk through my projects, talk about your stack, or
+              discuss how to improve test coverage and feedback loops on your team.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a id="link-email" class="cta-button" href="#">📧 Email</a>
+            <button id="copy-email" type="button" class="cta-button">
+              Copy email
+            </button>
+            <a id="link-linkedin-contact" class="cta-button" href="#" target="_blank" rel="noopener" >🔗 LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        &copy; <span id="year"></span> Raman Sharai. Built as a minimal static site on GitHub Pages.
+      </div>
+      <div class="footer-note">
+        This website uses Google Analytics to understand how visitors interact with the site.
+        The data is collected in an anonymized and aggregated form and does not identify individual users.
+      </div>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

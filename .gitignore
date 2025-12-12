@@ -1,0 +1,31 @@
+# -------------------------------
+# OS and system files
+# -------------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------------
+# IDE / editors
+# -------------------------------
+# VS Code
+.vscode/
+# PyCharm / IntelliJ
+.idea/
+# Other IDE-specific files
+*.swp
+*.swo
+
+# -------------------------------
+# Virtual environments
+# -------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# -------------------------------
+# Environment configs/secrets
+# -------------------------------
+.env
+.env.*
+*.env
