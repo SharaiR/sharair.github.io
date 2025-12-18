@@ -5,7 +5,7 @@ window.PORTFOLIO_CONFIG = Object.freeze({
 
   contact: {
     email: "roma.sharai@gmail.com",
-    linkedin: "https://www.linkedin.com/in/raman-s-8a5549b0",
+    linkedin: "https://www.linkedin.com/in/roman-s-8a5549b0",
   },
 
   profiles: {
