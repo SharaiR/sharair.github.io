@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python virtualenvs
+.venv/
+venv/
+env/
+ENV/
+
+# Node / tooling
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Environment configs/secrets
+.env
+.env.*
+*.env
