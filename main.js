@@ -48,6 +48,7 @@ function initLinks(cfg) {
     ["link-github", cfg.profiles?.github],
     ["link-repo-pytest-selenium", cfg.repos?.pytestSelenium],
     ["link-repo-python-api-tests", cfg.repos?.pythonApiTests],
+    ["link-repo-playwright-python", cfg.repos?.playwrightPython],
     ["link-appstore", cfg.apps?.appStoreUrl],
     ["link-qr", cfg.apps?.qrImage],
     ["link-email", cfg.contact?.email, "mailto:"],

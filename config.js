@@ -15,6 +15,7 @@ window.PORTFOLIO_CONFIG = Object.freeze({
   repos: {
     pytestSelenium: "https://github.com/SharaiR/pytest_and_selenium",
     pythonApiTests: "https://github.com/SharaiR/python-api-tests",
+    playwrightPython: "https://github.com/SharaiR/playwright-python",
   },
 
   apps: {
