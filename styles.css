@@ -688,6 +688,34 @@ body.light-theme .tag {
   background: #f9fafb;
 }
 
+.review-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  margin: 2px 0 8px;
+  border: 1px solid rgba(251, 191, 36, 0.55);
+  border-radius: var(--radius-pill);
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.review-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+body.light-theme .review-status {
+  border-color: rgba(217, 119, 6, 0.4);
+  background: #fffbeb;
+  color: #92400e;
+}
+
 .link-row {
   display: flex;
   flex-wrap: wrap;
@@ -926,6 +954,11 @@ footer {
 @media (max-width: 720px) {
   .nav-links {
     display: none;
+  }
+
+  .projects-header {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .hero {

@@ -21,5 +21,8 @@ window.PORTFOLIO_CONFIG = Object.freeze({
   apps: {
     appStoreUrl: "https://apps.apple.com/app/dice-n-roll/id6736938458",
     qrImage: "assets/app-dicenroll-qr-code.png",
+    nightDimmerAppStoreUrl: "https://apps.apple.com/us/app/night-dimmer/id6780599256?mt=12",
+    nightDimmerWebsiteUrl: "https://sites.google.com/view/nightdimmer",
+    adQuietWebsiteUrl: "https://sites.google.com/view/adquiet/home",
   },
 });

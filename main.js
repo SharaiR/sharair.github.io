@@ -51,6 +51,9 @@ function initLinks(cfg) {
     ["link-repo-playwright-python", cfg.repos?.playwrightPython],
     ["link-appstore", cfg.apps?.appStoreUrl],
     ["link-qr", cfg.apps?.qrImage],
+    ["link-night-dimmer-appstore", cfg.apps?.nightDimmerAppStoreUrl],
+    ["link-night-dimmer-website", cfg.apps?.nightDimmerWebsiteUrl],
+    ["link-ad-quiet-website", cfg.apps?.adQuietWebsiteUrl],
     ["link-email", cfg.contact?.email, "mailto:"],
   ];
 
