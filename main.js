@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initFooterYear();
   initFilters();
+  initRevealAnimations();
 });
 
 function setHref(id, url, prefix) {
@@ -37,7 +38,7 @@ function initName(fullName) {
   });
 
   const avatar = document.getElementById("brand-avatar");
-  if (avatar) {
+  if (avatar && avatar.tagName !== "IMG") {
     avatar.textContent = fullName.charAt(0) || avatar.textContent;
   }
 }
@@ -124,10 +125,13 @@ function initFooterYear() {
 function initFilters() {
   const filterPills = document.querySelectorAll(".filter-pill");
   const projectCards = document.querySelectorAll(".project-card");
+  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 
   if (!filterPills.length || !projectCards.length) return;
 
-  const applyFilter = (filter) => {
+  const applyFilter = (filter, animate = false) => {
+    let visibleIndex = 0;
+
     projectCards.forEach((card) => {
       const tags = (card.dataset.tags || "")
         .split(",")
@@ -136,6 +140,23 @@ function initFilters() {
 
       const shouldShow = filter === "all" || tags.includes(filter);
       card.classList.toggle("hidden", !shouldShow);
+
+      if (shouldShow && animate && !reduceMotion && card.animate) {
+        card.getAnimations().forEach((animation) => animation.cancel());
+        card.animate(
+          [
+            { opacity: 0, transform: "translateY(10px) scale(0.99)" },
+            { opacity: 1, transform: "translateY(0) scale(1)" },
+          ],
+          {
+            duration: 260,
+            delay: Math.min(visibleIndex * 35, 175),
+            easing: "cubic-bezier(0.2, 0.75, 0.25, 1)",
+            fill: "backwards",
+          },
+        );
+        visibleIndex += 1;
+      }
     });
   };
 
@@ -151,7 +172,7 @@ function initFilters() {
     pill.addEventListener("click", () => {
       const filter = pill.dataset.filter || "all";
       activatePill(pill);
-      applyFilter(filter);
+      applyFilter(filter, true);
     });
   });
 
@@ -160,4 +181,37 @@ function initFilters() {
     activatePill(defaultActive);
     applyFilter(defaultActive.dataset.filter || "all");
   }
+}
+
+function initRevealAnimations() {
+  const revealItems = document.querySelectorAll(
+    ".hero, .tech-strip, #about, #projects, #skills, #contact",
+  );
+  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+
+  if (!revealItems.length) return;
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+    return;
+  }
+
+  revealItems.forEach((item) => item.classList.add("reveal-item"));
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.08,
+      rootMargin: "0px 0px -6%",
+    },
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
 }

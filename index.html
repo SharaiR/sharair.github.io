@@ -9,6 +9,13 @@
     content="Portfolio – SDET | QA Automation Engineer focused on Python, Selenium, API, and performance testing."
   />
 
+  <link rel="icon" type="image/svg+xml" href="assets/rs-website-favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 
 </head>
@@ -18,7 +25,12 @@
     <header class="site-header">
       <div class="nav-inner">
         <div class="brand">
-          <div id="brand-avatar" class="brand-avatar"></div>
+          <img
+            id="brand-avatar"
+            class="brand-avatar"
+            src="assets/rs-website-favicon.svg"
+            alt="RS"
+          />
           <div class="brand-text">
             <div id="brand-name" class="brand-name"></div>
             <div class="brand-role">SDET · QA Automation Engineer</div>
@@ -77,10 +89,10 @@
             <!-- · No sponsorship required -->
             <span>📍 London, UK</span>
           </div>
-          <div class="hero-title-container">
-            <h1 id="hero-title" class="hero-title"></h1>
-            <h1 class="hero-title">(goes by Ron)</h1>
-          </div>
+          <h1 class="hero-title">
+            <span id="hero-title"></span>
+            <span class="hero-preferred-name">(goes by Ron)</span>
+          </h1>
           <p class="hero-subtitle">
             SDET / QA Automation Engineer · Python / C#
           </p>
@@ -89,7 +101,7 @@
             I build reliable UI and API automation in Python and C#,
             with CI/CD integration and Docker for consistent test environments.
             I’ve worked with microservices and cloud-connected systems,
-            including end-to-end API validation and contract testing experience in commercial projects.
+            including experience with end-to-end API validation and contract testing in commercial projects.
           </p>
 
           <div class="hero-buttons">
@@ -107,7 +119,7 @@
                 <div class="hero-stat-label">years in IT</div>
               </div>
               <div class="hero-stat">
-                <div class="hero-stat-number">6+</div>
+                <div class="hero-stat-number">7</div>
                 <div class="hero-stat-label">years in automation</div>
               </div>
               <div class="hero-stat">
@@ -128,7 +140,7 @@
             <div class="hero-tech-strip">
               <div class="tech-chip">Python</div>
               <div class="tech-chip">C#</div>
-              <div class="tech-chip">Pytest</div>
+              <div class="tech-chip">pytest</div>
               <div class="tech-chip">Selenium</div>
               <div class="tech-chip">Playwright</div>
               <div class="tech-chip">NUnit</div>
@@ -153,10 +165,10 @@
             <span class="icon-text">Python</span>
           </div>
 
-          <!-- Pytest -->
+          <!-- pytest -->
           <div class="icon-tile">
-            <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Pytest_logo.svg" alt="Pytest" />
-            <span class="icon-text">Pytest</span>
+            <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Pytest_logo.svg" alt="pytest" />
+            <span class="icon-text">pytest</span>
           </div>
 
           <!-- C# -->
@@ -238,20 +250,20 @@
           <div class="card">
             <p class="card-body">
               I&rsquo;m a Software Test Automation Engineer with around ten years in IT and
-              six+ years in automation using C#, Python, and modern frameworks.
+              seven years in automation using C#, Python, and modern frameworks.
               I&rsquo;ve built UI, API, and performance test suites, integrated them into
               CI/CD, and worked with microservices and cloud environments.
             </p>
             <p class="card-body card-body-muted">
-              Recently I’ve been focusing on Python test automation (Pytest) for UI and API testing,
+              Recently I’ve been focusing on Python test automation (pytest) for UI and API testing,
               building maintainable test suites and integrating them into CI/CD.
             </p>
           </div>
 
           <div class="card about-card">
             <p class="card-body">
-              Outside of work I practice kendo, enjoy Japanese culture, and play Nintendo games,
-               and sometimes explore iOS development in Swift.
+              Outside of work, I practice kendo, enjoy Japanese culture, play Nintendo games,
+              and sometimes explore iOS development in Swift.
             </p>
             <div class="about-hobbies">
               <div class="about-pill">
@@ -297,22 +309,22 @@
 
         <div class="projects-grid">
 
-          <!-- Pytest + Selenium -->
+          <!-- pytest + Selenium -->
           <article class="card project-card" data-tags="test-automation,ui">
-            <h3 class="card-title">UI test framework &mdash; Pytest + Selenium</h3>
-            <p class="card-subtitle">Python · Pytest · Selenium · POM</p>
+            <h3 class="card-title">UI test framework &mdash; pytest + Selenium</h3>
+            <p class="card-subtitle">Python · pytest · Selenium · POM</p>
             <p class="card-body">
-              Python UI automation with Pytest and Selenium, using Page Object Model,
+              Python UI automation with pytest and Selenium, using the Page Object Model,
               fixtures, parametrization, and environment-aware config. Structured to
               plug into CI and be easy for a team to extend.
             </p>
             <div class="tag-row">
-              <span class="tag">Pytest</span>
+              <span class="tag">pytest</span>
               <span class="tag">Selenium</span>
               <span class="tag">POM</span>
               <span class="tag">UI testing</span>
-              <span class="tag">GitHub Actuins</span>
-              <span class="tag">Allure report</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Allure Report</span>
             </div>
             <div class="link-row">
               <a
@@ -336,10 +348,10 @@
             </p>
             <div class="tag-row">
               <span class="tag">Playwright</span>
-              <span class="tag">Pytest</span>
+              <span class="tag">pytest</span>
               <span class="tag">UI testing</span>
               <span class="tag">GitHub Actions</span>
-              <span class="tag">Allure report</span>
+              <span class="tag">Allure Report</span>
             </div>
             <div class="link-row">
               <a id="link-repo-playwright-python" href="#" target="_blank" rel="noopener">View repository →</a>
@@ -356,12 +368,12 @@
               architecture.
             </p>
             <div class="tag-row">
-              <span class="tag">Pytest</span>
+              <span class="tag">pytest</span>
               <span class="tag">Requests</span>
               <span class="tag">API testing</span>
               <span class="tag">Unit testing</span>
-              <span class="tag">GitHub Actuins</span>
-              <span class="tag">Allure report</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Allure Report</span>
             </div>
             <div class="link-row">
               <a id="link-repo-python-api-tests" href="#" target="_blank" rel="noopener" >View repository →</a>
@@ -400,7 +412,7 @@
               </div>
             </div>
             <p class="card-body">
-              A clean dice rolling app with multiple dice types, simple visuals,
+              A clean dice-rolling app with multiple dice types, simple visuals,
               and optional in-app themes. Built and shipped end-to-end: design,
               development, testing, and App Store release.
             </p>
@@ -490,7 +502,7 @@
             <div class="card-title-row">
               <div class="card-title-text">
                 <h3 class="card-title">Ad Quiet &mdash; Safari extension</h3>
-                <p class="card-subtitle">Safari Extension · iOS · macOS · On-device Privacy</p>
+                <p class="card-subtitle">Safari extension · iOS · macOS · On-device privacy</p>
               </div>
               <div class="card-icon">
                 <a
@@ -516,7 +528,7 @@
               Skip button. Settings and diagnostics stay on the device.
             </p>
             <div class="tag-row">
-              <span class="tag">Safari Extension</span>
+              <span class="tag">Safari extension</span>
               <span class="tag">iOS</span>
               <span class="tag">macOS</span>
               <span class="tag">Solo project</span>
@@ -585,7 +597,7 @@
       <section id="skills">
         <div class="section-header">
           <div class="section-kicker">Skills</div>
-          <h2 class="section-title">Core stack as SDET</h2>
+          <h2 class="section-title">Core stack as an SDET</h2>
           <p class="section-subtitle">
             Focused on Python, with strong C# experience and enough breadth to support real-world teams.
           </p>
@@ -595,7 +607,7 @@
           <div>
             <div class="skills-group-title">Core SDET stack</div>
             <ul class="skills-list">
-              <li>Python · <strong>Pytest</strong></li>
+              <li>Python · <strong>pytest</strong></li>
               <li>C# · NUnit · SpecFlow</li>
               <li>Selenium WebDriver · Playwright</li>
               <li>API testing (REST, Requests, Postman)</li>
@@ -610,7 +622,7 @@
               <li>BDD (Gherkin), TDD, DDT, unit testing</li>
               <li>CI/CD: Azure DevOps, GitHub Actions, Jenkins</li>
               <li>Agile / Scrum, shift-left testing, Three Amigos</li>
-              <li>Accessibility testing (AXE DevTools)</li>
+              <li>Accessibility testing (axe DevTools)</li>
             </ul>
           </div>
 
